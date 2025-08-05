@@ -130,14 +130,12 @@
               <iframe id="resultFrame1"></iframe>
             </div>
           </div>
-
           <div class="iframe-box">
             <div class="iframe-header">페이지 2</div>
             <div class="iframe-container">
               <iframe id="resultFrame2"></iframe>
             </div>
           </div>
-
           <div class="iframe-box">
             <div class="iframe-header">페이지 3</div>
             <div class="iframe-container">
@@ -152,6 +150,24 @@
           </div>
           <div class="iframe-box">
             <div class="iframe-header">페이지 5</div>
+            <div class="iframe-container">
+              <iframe id="resultFrame5"></iframe>
+            </div>
+          </div>
+          <div class="iframe-box">
+            <div class="iframe-header">페이지 6</div>
+            <div class="iframe-container">
+              <iframe id="resultFrame5"></iframe>
+            </div>
+          </div>
+          <div class="iframe-box">
+            <div class="iframe-header">페이지 7</div>
+            <div class="iframe-container">
+              <iframe id="resultFrame5"></iframe>
+            </div>
+          </div>
+          <div class="iframe-box">
+            <div class="iframe-header">페이지 8</div>
             <div class="iframe-container">
               <iframe id="resultFrame5"></iframe>
             </div>
@@ -200,7 +216,7 @@
         );
 
         // 세 개의 iframe에 각각 다른 페이지 인덱스로 URL 설정
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 8; i++) {
           const url = `https://www.fss.or.kr/fss/cvpl/inquiRecpEc/publicList.do?sdate=${sdate}&edate=${edate}&menuNo=200094&pageIndex=${i}&&dealStatCd=&searchCnd=1&searchStr=${searchStr}`;
           document.getElementById(`resultFrame${i}`).src = url;
         }

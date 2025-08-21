@@ -217,7 +217,7 @@
 
         // 세 개의 iframe에 각각 다른 페이지 인덱스로 URL 설정
         for (let i = 1; i <= 8; i++) {
-          const url = `https://www.fss.or.kr/fss/cvpl/inquiRecpEc/publicList.do?sdate=${sdate}&edate=${edate}&menuNo=200094&pageIndex=${i}&&dealStatCd=&searchCnd=1&searchStr=${searchStr}`;
+          const url = `https://www.fss.or.kr/fss/cvpl/inquiRecpEc/publicList.do?sdate=${sdate}&edate=${edate}&menuNo=200094&pageIndex=${i}&&dealStatCd=2&searchCnd=1&searchStr=${searchStr}`;
           document.getElementById(`resultFrame${i}`).src = url;
         }
       }
